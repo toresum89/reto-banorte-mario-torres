@@ -1,0 +1,104 @@
+{
+  "version": "0.2",
+  "nota": "Datos públicos del CV de Mario Alberto Torres Cruz. Teléfono y correo omitidos por privacidad.",
+  "nombre": "Mario Alberto Torres Cruz",
+  "titulo_profesional": "Generative AI Engineer | Full-stack AI Developer - Agents, RAG & Cloud Architecture",
+  "resumen": "Full-stack developer e ingeniero de IA con más de 15 años en tecnología e ingeniería y más de 5 años construyendo software de producción y sistemas de IA generativa. Desarrolla aplicaciones end-to-end con React/TypeScript, Node.js, FastAPI y Python, además de despliegues cloud contenerizados. Su trabajo se centra en agentes con tool calling, integraciones MCP, RAG agéntico, diseño de bases de conocimiento y evaluación de sistemas con salidas estructuradas, grounding y validación contra fuentes recuperadas. También cuenta con experiencia de liderazgo como Scrum Master de 5 equipos de I+D coordinados entre Japón y México.",
+  "contacto_publico": {
+    "linkedin": "https://linkedin.com/in/mario-torres-toiram",
+    "github": "",
+    "sitio_web": ""
+  },
+  "experiencia": [
+    {
+      "organizacion": "Innova Schools, Campus Ojo de Agua",
+      "puesto": "Lead Full-stack Developer & Technology Educator",
+      "periodo": "2025 - presente",
+      "descripcion": "Diseño de sistemas full-stack, bases de conocimiento y automatizaciones académicas.",
+      "logros": [
+        "Diseñó la base de conocimiento para el chatbot institucional RAG AEC, reestructurando 43 manuales de políticas y conjuntos de FAQ en Markdown optimizado para chunking, embeddings y recuperación semántica.",
+        "Arquitectó y lanzó el portal de registro en tiempo real Innova Art 2026, atendiendo a más de 800 participantes y reduciendo aproximadamente 80% de las horas administrativas manuales.",
+        "Construyó y desplegó un pipeline de automatización de Kardex con manipulación de XML/documentos en Python y Docker sobre Render.",
+        "Auditó políticas de Row Level Security en Supabase y realizó revisiones de código React para eliminar condiciones de carrera y defectos de hooks concurrentes."
+      ],
+      "tecnologias": ["JavaScript", "Firebase Realtime Database", "Netlify", "Python", "Docker", "Render", "PostgreSQL", "Supabase", "React"]
+    },
+    {
+      "organizacion": "Circle Armored (Armored Alliance)",
+      "puesto": "AI Engineer",
+      "periodo": "2021 - 2022",
+      "descripcion": "Desarrollo de aplicaciones de seguridad, detección de anomalías y búsqueda semántica.",
+      "logros": [
+        "Entregó una aplicación móvil de seguridad con modelos GMM y RNN/LSTM para detección de anomalías e identificación de amenazas en datos continuos de sensores.",
+        "Diseñó pipelines RAG y de búsqueda semántica integrando modelos PyTorch con Chroma DB.",
+        "Construyó el backend REST en Node.js y suites de pruebas unitarias y de integración en pipelines CI/CD."
+      ],
+      "tecnologias": ["GMM", "RNN/LSTM", "PyTorch", "RAG", "Chroma DB", "Node.js", "Pytest", "Jest", "CI/CD"]
+    },
+    {
+      "organizacion": "Mirai Innovation Lab",
+      "puesto": "Assistant Researcher - AI & Robotics | Scrum Master (5 R&D teams)",
+      "periodo": "2020 - 2022",
+      "descripcion": "Investigación en agentes inteligentes y robótica, red teaming de IA y liderazgo ágil de equipos internacionales.",
+      "logros": [
+        "Desarrolló sistemas de agentes inteligentes autónomos para toma de decisiones en entornos robóticos complejos.",
+        "Lideró red teaming de IA sobre modelos y redes neuronales profundas para evaluar seguridad, robustez y sesgo.",
+        "Coordinó 5 equipos paralelos de I+D y lideró la entrega remota entre México y Japón.",
+        "Redujo bloqueos en 80% y logró 100% de entregas a tiempo durante el periodo remoto."
+      ],
+      "tecnologias": ["AI agents", "Deep neural networks", "AI red teaming", "Scrum", "Agile"]
+    },
+    {
+      "organizacion": "ST Móvil",
+      "puesto": "Founder & CEO / Lead Systems Architect",
+      "periodo": "2015 - 2023",
+      "descripcion": "Fundación y escalamiento de una empresa de IoT y seguridad automatizada, con responsabilidad sobre arquitectura, entrega y clientes.",
+      "logros": [
+        "Lideró 12 ingenieros en más de 15 proyectos de monitoreo en tiempo real.",
+        "Diseñó arquitecturas full-stack de plataformas IoT con dashboards, APIs REST, AWS y PostgreSQL.",
+        "Desplegó modelos de visión computacional y machine learning para detección de tráfico y anomalías de seguridad en 3 municipios."
+      ],
+      "tecnologias": ["IoT", "AWS", "PostgreSQL", "REST APIs", "Computer vision", "Machine learning"]
+    },
+    {
+      "organizacion": "Secundaria John F. Kennedy",
+      "puesto": "Technology Educator & Python Developer",
+      "periodo": "2023 - 2025",
+      "descripcion": "Desarrollo de herramientas de simulación y datos en Python para validación empírica y pruebas de hipótesis con metodología bayesiana.",
+      "logros": [],
+      "tecnologias": ["Python", "Bayesian methodology", "Data tools", "Simulation"]
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Aula",
+      "descripcion": "Capa generativa sobre una base de conocimiento institucional para producir materiales didácticos, comunicaciones familiares e informes en lenguaje claro a partir de documentos y registros académicos.",
+      "rol": "En progreso",
+      "tecnologias": ["FastAPI", "RAG", "LoRA", "Structured output", "Schema validation", "Grounded generation"]
+    },
+    {
+      "nombre": "Simulacro",
+      "descripcion": "Generación de datos sintéticos para detección de eventos raros mediante audio y señales de acelerómetros coherentes con el mismo evento subyacente.",
+      "rol": "Investigación",
+      "tecnologias": ["PyTorch", "Diffusion", "Time-series synthesis", "Synthetic data"]
+    },
+    {
+      "nombre": "Shadowline",
+      "descripcion": "Pipeline de datos en tiempo real y sistema de decisión ML que ingiere feeds JSON de cuotas, persiste datos en una base de series temporales de 47.5 millones de filas y entrega resultados mediante un bot de Telegram.",
+      "rol": "Production",
+      "tecnologias": ["Node.js", "SQLite", "Python", "Telegram API", "Logistic model", "Walk-forward validation"]
+    },
+    {
+      "nombre": "GuardiasEscolares PRO",
+      "descripcion": "Plataforma PWA offline-first para asignar guardias de supervisión a 32 docentes, 12 grupos y 4 horarios diarios mediante un motor de programación con restricciones.",
+      "rol": "Production",
+      "tecnologias": ["JavaScript", "PWA", "Service Worker", "SheetJS", "Google Calendar", "Constraint-based scheduling"]
+    }
+  ],
+  "habilidades": {
+    "tecnicas": ["LLM application design", "Prompt engineering", "Structured output", "Schema validation", "Grounded generation", "RAG", "RAG evaluation", "Fine-tuning", "LoRA", "Stable Diffusion", "Flux.1", "LLaMA", "Qwen", "Ollama", "Synthetic data generation", "AI agents", "Tool calling", "MCP", "Agentic RAG", "LangChain", "Chroma DB", "pgvector", "React", "TypeScript", "Next.js", "JavaScript", "Node.js", "Express", "FastAPI", "Python", "REST API design", "PostgreSQL", "MongoDB", "AWS", "Google Cloud", "Firebase", "Docker", "Gunicorn", "Render", "Netlify", "Supabase", "Linux", "CI/CD", "Jest", "Pytest", "Playwright", "PyTorch", "TensorFlow", "RNN/LSTM", "GMM", "Computer vision", "Time-series modeling", "Walk-forward validation"],
+    "blandas": ["Technical leadership", "Scrum Master", "Agile delivery", "Remote collaboration", "Async-first coordination", "Cross-cultural collaboration", "Public speaking", "Systems thinking"],
+    "idiomas": ["Español - nativo", "Inglés - C1, TOEFL 110/120", "Japonés - básico"]
+  },
+  "formacion": []
+}
