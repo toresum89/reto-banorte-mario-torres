@@ -36,6 +36,9 @@ python -m pytest -q        # contrato y privacidad, con modelo simulado (no gast
 4. Comprobar `https://<tu-servicio>.onrender.com/health`.
 5. Registrar la URL base y la API key en la sección Agentes de la plataforma.
 
+Configura también `PUBLIC_BASE_URL` con la URL pública del servicio para que la tarjeta
+`/.well-known/agent-card.json` anuncie correctamente el endpoint desplegado.
+
 El plan gratuito de Render duerme el servicio tras un rato sin tráfico: antes de una demo, llama a `/health`
 para despertarlo.
 
