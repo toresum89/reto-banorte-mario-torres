@@ -173,6 +173,8 @@ Invoke-RestMethod `
 
 ## Pruebas
 
+La metodología, el golden set propuesto, las métricas y los criterios de aceptación están documentados en [docs/Evaluation.md](docs/Evaluation.md).
+
 Las pruebas utilizan `MOCK_LLM=1` para evitar consumo de cuota:
 
 ```powershell
