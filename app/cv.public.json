@@ -100,5 +100,11 @@
     "blandas": ["Technical leadership", "Scrum Master", "Agile delivery", "Remote collaboration", "Async-first coordination", "Cross-cultural collaboration", "Public speaking", "Systems thinking"],
     "idiomas": ["Español - nativo", "Inglés - C1, TOEFL 110/120", "Japonés - básico"]
   },
-  "formacion": []
+  "formacion": [
+    {
+      "institucion": "Universidad La Salle Pachuca",
+      "titulo": "Licenciado en Ingeniería Mecatrónica",
+      "periodo": "Título otorgado el 31 de julio de 2018"
+    }
+  ]
 }
