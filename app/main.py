@@ -70,6 +70,11 @@ async def agent_card():
                 "url": f"{base_url}/v1/responses",
                 "protocolBinding": "HTTP+JSON",
                 "protocolVersion": "0.3.0"
+            },
+            {
+                "url": f"{base_url}/v1/responses",
+                "protocolBinding": "open-responses",
+                "protocolVersion": "1.0"
             }
         ],
         "capabilities": {
