@@ -65,6 +65,13 @@ async def agent_card():
         "url": f"{base_url}/v1/responses",
         "version": "1.0.0",
         "protocolVersion": "0.3.0",
+        "supportedInterfaces": [
+            {
+                "url": f"{base_url}/v1/responses",
+                "protocolBinding": "HTTP+JSON",
+                "protocolVersion": "0.3.0"
+            }
+        ],
         "capabilities": {
             "streaming": True,
             "pushNotifications": False,

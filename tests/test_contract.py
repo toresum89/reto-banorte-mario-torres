@@ -34,6 +34,9 @@ def test_agent_card_is_public_and_describes_endpoint():
     card = r.json()
     assert card["name"]
     assert card["url"].endswith("/v1/responses")
+    assert card["supportedInterfaces"][0]["url"].endswith("/v1/responses")
+    assert card["supportedInterfaces"][0]["protocolBinding"] == "HTTP+JSON"
+    assert card["supportedInterfaces"][0]["protocolVersion"] == "0.3.0"
     assert card["defaultInputModes"] == ["text"]
     assert card["defaultOutputModes"] == ["text"]
     assert card["skills"]
