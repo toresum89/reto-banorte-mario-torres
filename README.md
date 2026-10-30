@@ -1,7 +1,8 @@
 # Agente de CV (Reto IA Banorte)
 
 Agente conversacional que responde sobre mi trayectoria profesional. Expone `POST /v1/responses`
-compatible con [Open Responses](https://www.openresponses.org/) y `GET /health`.
+compatible con [Open Responses](https://www.openresponses.org/), `GET /health` y la tarjeta pública
+`GET /.well-known/agent-card.json` requerida para el descubrimiento del agente.
 
 ## Cómo funciona
 

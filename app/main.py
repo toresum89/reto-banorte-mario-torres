@@ -55,6 +55,42 @@ app = FastAPI(title="Agente de CV", docs_url=None, redoc_url=None)
 _hits = defaultdict(deque)
 
 
+@app.get("/.well-known/agent-card.json")
+async def agent_card():
+    """Tarjeta pública de descubrimiento para la plataforma del reto."""
+    base_url = os.getenv("PUBLIC_BASE_URL", "http://localhost:8000").rstrip("/")
+    return {
+        "name": "Agente CV de Mario Torres",
+        "description": "Agente conversacional que responde sobre la trayectoria profesional, experiencia, habilidades y proyectos de Mario Alberto Torres Cruz.",
+        "url": f"{base_url}/v1/responses",
+        "version": "1.0.0",
+        "protocolVersion": "0.3.0",
+        "capabilities": {
+            "streaming": True,
+            "pushNotifications": False,
+            "stateTransitionHistory": False
+        },
+        "defaultInputModes": ["text"],
+        "defaultOutputModes": ["text"],
+        "skills": [
+            {
+                "id": "professional-profile",
+                "name": "Perfil profesional",
+                "description": "Responde preguntas sobre experiencia, habilidades, proyectos, formación e idiomas documentados en el CV.",
+                "tags": ["cv", "career", "professional-profile"]
+            }
+        ],
+        "securitySchemes": {
+            "apiKey": {
+                "type": "apiKey",
+                "name": "Authorization",
+                "in": "header"
+            }
+        },
+        "security": [{"apiKey": []}]
+    }
+
+
 class BadRequest(Exception):
     pass
 

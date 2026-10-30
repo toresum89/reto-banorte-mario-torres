@@ -28,6 +28,17 @@ def test_health():
     assert r.status_code == 200 and r.json()["status"] == "ok"
 
 
+def test_agent_card_is_public_and_describes_endpoint():
+    r = client.get("/.well-known/agent-card.json")
+    assert r.status_code == 200
+    card = r.json()
+    assert card["name"]
+    assert card["url"].endswith("/v1/responses")
+    assert card["defaultInputModes"] == ["text"]
+    assert card["defaultOutputModes"] == ["text"]
+    assert card["skills"]
+
+
 def test_basic_text_response_has_required_fields():
     r = client.post("/v1/responses", json={"model": "x", "input": "Hola"})
     assert r.status_code == 200
